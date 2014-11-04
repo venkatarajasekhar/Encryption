@@ -1,1 +1,418 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ab4e23d2-a6e1-482a-afa7-f9806106cfc5" name="classdiagram_encryption" linkedPackageId="71692f6a-5564-442d-a46e-d7b818cba81b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="0056baf4-ada9-40ed-ba75-146b8c7e0945" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="1622484d-81ba-42f1-8706-16da5849830b" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e77b7a4d-4b87-412c-9da2-525f49b64e79">
+          <propertyInstance Id="480cc4c9-163e-44f5-9dd6-318e68fba0a2" name="BaseName">
+            <elementDefinition Id="0a3aef91-d3e0-4eac-a7c6-48b9bd3d9afe" />
+          </propertyInstance>
+          <elementDefinition Id="1d991b8e-a9d5-4c2c-b5f4-53e74e9b731c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d63a124f-841f-45cc-a11d-8cf33bab7575">
+          <propertyInstance Id="c760e2c9-a34c-425d-9a48-10e49467725d" name="ClrAttributes">
+            <elementDefinition Id="ed1893a7-a54f-4ca8-bb56-96a30d1e8d16" />
+          </propertyInstance>
+          <elementDefinition Id="f85b93ed-d854-4e20-bfa0-0742bab43592" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="17664303-88c5-4967-8611-5b2b7f9a54fa">
+          <propertyInstance Id="ee5df1bf-57af-4e58-b5ee-5711f440210c" name="Usings">
+            <elementDefinition Id="1f43dad7-7ed1-4f28-b6ee-b35a10e296db" />
+          </propertyInstance>
+          <elementDefinition Id="f067f241-fff9-464a-a4e2-1c3d1a05e9c0" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="81cdcea6-bd66-4f46-a213-6978f455080d" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="8a01b19f-893f-411b-8c57-85f1949a1b2f" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b7d82cb5-62e4-4408-961d-3211d68e0dee">
+          <propertyInstance Id="058417c5-3b78-412d-bdbf-a9db9ea6b57f" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="74defa45-90d2-43c6-80c7-fc43c4e4d900" />
+          </propertyInstance>
+          <elementDefinition Id="9b64cfe8-5ba2-4ab8-a2ad-3910c442e0b8" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b81a543e-98a2-408a-9023-c9c346616184">
+          <propertyInstance Id="83af151e-eb50-4861-9a07-c41a5889c293" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="56991639-6a92-41de-ae80-2307e4f39a62" />
+          </propertyInstance>
+          <elementDefinition Id="306165a9-8193-46d5-a60e-6cc9cfb96412" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="349cfc9c-90da-41b3-890b-9c59cfa7f2fc">
+          <propertyInstance Id="3fb60e3a-926a-421f-9220-1045a9713a2e" name="ProjectPath" value="ClassTemplate=..\encryption_cdLib\encryption_cdLib.csproj|EnumTemplate=..\encryption_cdLib\encryption_cdLib.csproj|InterfaceTemplate=..\encryption_cdLib\encryption_cdLib.csproj|StructTemplate=..\encryption_cdLib\encryption_cdLib.csproj">
+            <elementDefinition Id="f89a9299-0048-4a99-b6f9-a27b3713ba2b" />
+          </propertyInstance>
+          <elementDefinition Id="b78f3bc1-cb46-4c1f-800e-1ec47d6632de" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6db7a3bf-fb1a-40b1-aac4-c7a1c53842ac">
+          <propertyInstance Id="5db50ce1-7b0d-4c87-94bb-565aa0b12c33" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="b89e72a2-f60d-4a2a-a6c3-4454a8c0db4e" />
+          </propertyInstance>
+          <elementDefinition Id="f4381f99-9f67-4af3-a9b1-fd5005f20d8d" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="cb376a4c-7978-46df-b1de-0bd124e97022">
+          <propertyInstance Id="537a5767-0383-43c0-b6d1-6d8c6393090b" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="fec30457-2731-4833-b7ab-b08df430b4f9" />
+          </propertyInstance>
+          <elementDefinition Id="8cd398ac-09b6-49c8-b773-fe2fe61a20f2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="22546f9d-7ef8-46c0-8ad4-73e1027d75da">
+          <propertyInstance Id="a818c1d2-9cd7-4d84-9a27-01be7cbc8ce0" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="07544c74-93b6-45e1-b37a-26833a3b2f56" />
+          </propertyInstance>
+          <elementDefinition Id="34a7d71e-d675-432e-9aab-b6651aeff1c9" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4a60f908-2227-474c-8c98-8fd03e451d52">
+          <propertyInstance Id="a790ddee-d81f-44af-bdd6-cfae0bb36364" name="Parameters">
+            <elementDefinition Id="b60bfac0-8443-43eb-9079-a17c896215fe" />
+          </propertyInstance>
+          <elementDefinition Id="4b735645-c880-4464-a635-b6922c7ede0b" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="0dc5a70d-1997-40e3-982a-dfa5ba163009">
+      <profileInstance Id="af261e7a-0b52-4bd4-9151-6267306b1ef1" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fe45919b-9c2d-4b6a-b6b1-25b44c1e7a30">
+      <profileInstance Id="fbcfa4cc-b856-4fb6-88a9-ed73eb7dabd6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="44481030-1327-4791-93b7-63a577d30429">
+      <profileInstance Id="214b951c-edf1-4f31-9378-1728cab78774" name="CSharpProfile">
+        <elementDefinition Id="b25dc58d-a97e-4689-b340-d069ecf3e52e" />
+      </profileInstance>
+      <elementDefinition Id="4b66b4f7-7669-497b-8ab2-7566b3c8f328" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0ec6108c-5f7b-4658-ba9a-91b9da9946df">
+      <profileInstance Id="44a25722-5162-42df-8bd5-037b00d705fd" name="TextTemplateBindings">
+        <elementDefinition Id="d2bba29b-0f38-4758-bdbc-5de31b313024" />
+      </profileInstance>
+      <elementDefinition Id="86a975aa-6cdf-4531-8632-ad627d13065b" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e229e2f0-3c7e-4c0f-9f91-cface003010b" name="Object" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dfdcbd27-0258-4e85-89c5-93a1c7a3bebc" />
+        <ownedOperationsInternal>
+          <operation Id="d46b09fa-dc8e-419b-a6d2-a7017567a4c9" name="Object" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="f7141cf9-2178-4072-82ae-94b3c8a1109a" name="method" profile="CSharpProfile">
+                <elementDefinition Id="21a833fa-006c-4488-9193-01c7aa097a45" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fa31e7b3-e4e0-458f-b0fd-698af4ce30b1">
+                    <propertyInstance Id="1de7bec6-e981-4a09-8287-6e7e842d6cd6" name="ClrAttributes">
+                      <elementDefinition Id="73a5b779-9d77-43cf-ba1c-b7489cf4c950" />
+                    </propertyInstance>
+                    <elementDefinition Id="2ff33b94-ab31-4966-b754-5b4baec7bca7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6ff1b2f2-79ab-4cc8-adff-2a1211a0343a">
+                    <propertyInstance Id="fbe51136-a383-4f59-901c-75d43376f73c" name="IsPartial" value="false">
+                      <elementDefinition Id="628c418d-9904-438b-8ee3-9fa2e82bf46e" />
+                    </propertyInstance>
+                    <elementDefinition Id="d5fe4340-9cfa-474b-aa2c-06e523435d79" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="43da8da1-2c6f-4acc-b19c-57f69a03d2e8">
+                    <propertyInstance Id="5cdb1d91-68a2-4766-a306-0a2f1aec0d81" name="IsUnsafe" value="false">
+                      <elementDefinition Id="66fb1bed-acb7-4937-92b6-cefab35f11b3" />
+                    </propertyInstance>
+                    <elementDefinition Id="719438ac-270e-48d3-88ad-30b12219d4b4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="10f8b705-70b9-41d8-aca9-27802cd39763">
+                    <propertyInstance Id="06d675ee-5927-4f98-813f-0793e34bfb36" name="Inheritance" value="none">
+                      <elementDefinition Id="5b62a92c-4a48-4e5f-b743-08dcc570b10c" />
+                    </propertyInstance>
+                    <elementDefinition Id="53eada5e-6780-43af-8615-ca5e6a2384ed" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="87414226-df92-4e25-8773-acda380360a6">
+                    <propertyInstance Id="340bf597-1a5d-447c-9ce4-f08da90663b1" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="69aa7032-d800-454c-8075-0e8f6db6dfc7" />
+                    </propertyInstance>
+                    <elementDefinition Id="3d41784d-66d7-479b-b99f-38d93393ce49" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4c1f5e87-ecf3-434c-88cd-a9cea0a83bc9">
+                    <propertyInstance Id="eb8c7fc6-be8a-4879-b373-73267d1581bd" name="params" value="false">
+                      <elementDefinition Id="198ed9ab-d213-46b6-8893-76fca0fc01cf" />
+                    </propertyInstance>
+                    <elementDefinition Id="fab5c0d9-bd4a-440d-b3bc-8e2e2c0d08cb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="9ecaf5d7-32ff-45ed-b611-1ec901e984c2" />
+          </operation>
+          <operation Id="6339c954-c29e-4ed3-8e83-89ed3698a5ac" name="~Obhect" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="dffac650-d57f-4577-a63d-ffcb842ce26b" name="method" profile="CSharpProfile">
+                <elementDefinition Id="5bea4a8a-9802-49a1-a1b4-ddefeac2efe9" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="68d0dbbe-82ba-4e46-bb2e-814b60053fb0">
+                    <propertyInstance Id="3ff8bccf-c7d3-4f00-8b07-4e37e2ec0aab" name="ClrAttributes">
+                      <elementDefinition Id="998dbc90-511a-40d3-abdb-53fd87435acf" />
+                    </propertyInstance>
+                    <elementDefinition Id="ee21d438-da27-4b22-9db5-e64af8575fd1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f3ae5543-b95d-40d2-855a-b4863f883bc2">
+                    <propertyInstance Id="9be32fe2-a907-435f-ab0c-2879ace49a73" name="IsPartial" value="false">
+                      <elementDefinition Id="d8958135-8123-42c5-b3d8-e933bb86fcd0" />
+                    </propertyInstance>
+                    <elementDefinition Id="55f3849d-311c-4964-8776-c21423109699" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4b6428fb-7e8e-4896-b905-89906f748b87">
+                    <propertyInstance Id="063f8dda-19f2-483a-8683-afe95e18a1f4" name="IsUnsafe" value="false">
+                      <elementDefinition Id="7da93f04-8dcc-4d08-b1c8-24dd39937ced" />
+                    </propertyInstance>
+                    <elementDefinition Id="665b30bb-9255-4409-9231-649dda9b34f6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d87c3602-8a69-4a2b-947c-26aa3e0c7609">
+                    <propertyInstance Id="7f059170-62b4-40ec-884e-714a8893bd12" name="Inheritance" value="none">
+                      <elementDefinition Id="0ff5c158-f346-402c-b040-d9eeb7d9a5e7" />
+                    </propertyInstance>
+                    <elementDefinition Id="fae9b795-3fc4-4edb-be5e-61d06f1d0e4b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="59937690-53b5-44e0-ae39-22085e90b249">
+                    <propertyInstance Id="93a54e07-f0cd-45e9-8b76-58cb4c98c416" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="556a2c15-9e98-4c3b-bf22-3dd992b0b336" />
+                    </propertyInstance>
+                    <elementDefinition Id="d37ba445-9a37-47f3-bd33-92a1d431721d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1b441ab7-5dd1-4ad3-9439-4d69b1b4b071">
+                    <propertyInstance Id="3e940608-abc8-4ac1-8abb-12af11b4af4e" name="params" value="false">
+                      <elementDefinition Id="40fcabfb-3703-4b78-80d9-e1ae4223cde6" />
+                    </propertyInstance>
+                    <elementDefinition Id="846103b3-9014-4dbb-88f9-c961a49c2e69" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="049e9318-20a4-4bac-bb33-350694360d85" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8e35e8d6-4478-4bde-ae1f-42aec5ae35b0" name="Encrypt" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="82a08c13-e504-4218-ba2f-d26e95634782" />
+        <generalsInternal>
+          <generalization Id="14b11c50-9231-4db3-baf1-840c75618a10" isSubstitutable="false">
+            <classMoniker Id="e229e2f0-3c7e-4c0f-9f91-cface003010b" LastKnownName="Object" />
+            <elementDefinition Id="67b0c405-aab4-4b1b-95e5-c2ab26c5cfbd" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="5e9228f9-55ae-4711-9c16-bb3e6bf15ce5" name="encrypt" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ef6ef5e4-cf40-4579-bda6-c1c9b9bb9767" />
+          </operation>
+          <operation Id="67aadee2-a538-4a3b-88c0-c530a0abbc08" name="decrypt" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c4cb25be-dcb0-4352-a3fe-0d697de42e5f" />
+          </operation>
+          <operation Id="6ebcdcab-54d0-4c58-888d-c83f0c8c48dc" name="readFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="71f81c79-ef73-4e78-b3a4-064773807c1e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e72125a0-b58a-4318-b68a-e4b4b3a2b9e1" name="_fileName" direction="In" isUnique="false">
+                  <elementDefinition Id="64794c8e-bdb8-45d2-822a-874636f0333a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="af683eb6-44b4-4f2d-a65a-0d483b28b8ac" name="writeFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d8a38bc8-143b-4a7e-ab51-c6b2bf7cbebf" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7e049098-9364-46b3-b35c-7359d47b16bc" name="_fileName" direction="In" isUnique="false">
+                  <elementDefinition Id="9849cca0-4bb6-4f0a-934b-d879100a4ef4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3aca2b64-a413-4131-a9e0-688397a0d003" name="RSA" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ead5c71a-9e95-4da9-a5a7-04b96d73d490" />
+        <generalsInternal>
+          <generalization Id="7b1cd613-ee54-4ed3-a4c8-7cb5547701c9" isSubstitutable="false">
+            <classMoniker Id="8e35e8d6-4478-4bde-ae1f-42aec5ae35b0" LastKnownName="Encrypt" />
+            <elementDefinition Id="88b7da75-c1de-4641-8f98-1d1fa22b897a" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="c85d11c7-8842-4a08-9bd2-65906e1a25d4" name="decrypt" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ff32fdc6-4c1a-459b-99f6-d687efb3d9ea" />
+          </operation>
+          <operation Id="0b8e1f70-1f12-456a-aa0a-628bdca4c0db" name="encrypt" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5f13a238-f47d-475a-b6e4-20881b80227a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7b2ae087-b113-4a46-b4c8-266c7d45d04e" name="Caesar" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="527bc8e2-7037-41c8-b06f-92e5079d8122" />
+        <generalsInternal>
+          <generalization Id="a8ea9e0c-8a70-403a-83b7-613b641dba11" isSubstitutable="false">
+            <classMoniker Id="8e35e8d6-4478-4bde-ae1f-42aec5ae35b0" LastKnownName="Encrypt" />
+            <elementDefinition Id="5cb767af-3c26-4fbd-ac24-3eb6526394de" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="f956c17c-b5ba-40c3-b3a2-8724a569fbdd" name="decrypt" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="503bb341-bae0-4821-ba3b-e6bf68b8d792" />
+          </operation>
+          <operation Id="ebc80ad0-d2e2-48ed-91fa-84d3cfccaf86" name="encrypt" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7719bdda-19f4-43de-beae-32ab33f46cda" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6e3830ba-3ba1-486e-a52c-ed843b76d692" name="EpcosAdapter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8ff26344-4550-49da-b4a1-dd333d937c40" />
+        <suppliersInternal>
+          <dependency Id="d5324317-4ffb-46d5-916d-0937160a926c">
+            <classMoniker Id="8e35e8d6-4478-4bde-ae1f-42aec5ae35b0" LastKnownName="Encrypt" />
+            <elementDefinition Id="c1146d2e-f40e-4479-86e7-896b6f2bd764" />
+          </dependency>
+          <interfaceRealization Id="dcf0b4ef-7761-49fb-ba4b-aabdb5d65664">
+            <interfaceMoniker Id="f34e33f8-47ef-48e7-83d6-547360052826" LastKnownName="InterfaceEpcos" />
+            <elementDefinition Id="63da7580-9e72-4361-ab45-b121da19b6d1" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="e8959f80-2051-4fe7-8276-5eb1af1c8e7a" isSubstitutable="false">
+            <classMoniker Id="e229e2f0-3c7e-4c0f-9f91-cface003010b" LastKnownName="Object" />
+            <elementDefinition Id="9f03821e-7a0d-4b14-a7ee-92c82cd55782" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="e2959463-bf60-4894-b009-6301d76c28ea" name="encryptRSA" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b9d76dbe-755b-4aa4-8778-1e65a1689970" />
+          </operation>
+          <operation Id="f4abe258-ece1-4d09-be34-fb54e951af45" name="decryptRSA" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="45e4ac91-cc6a-4db1-b4fb-d561a5724dda" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="68be7a95-10c9-4e07-bdfc-58f34aae5854" name="NortelAdapter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ac88a0f1-f6f3-42fe-ab78-e7a3811b7fc7" />
+        <suppliersInternal>
+          <dependency Id="69963537-2b19-4c81-8f57-ca02487fa518">
+            <classMoniker Id="8e35e8d6-4478-4bde-ae1f-42aec5ae35b0" LastKnownName="Encrypt" />
+            <elementDefinition Id="c65e97ff-6c5b-44aa-a9a5-922cd68e4465" />
+          </dependency>
+          <interfaceRealization Id="ca0d56dc-5706-4444-bf53-a79552813433">
+            <interfaceMoniker Id="7d694c51-82ef-42bc-8dd9-d4067ec642d6" LastKnownName="InterfaceNortel" />
+            <elementDefinition Id="6b31b537-642b-4f42-a069-c1eea3a4e80b" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="6701212b-6582-4a50-984b-8036e7f91b54" isSubstitutable="false">
+            <classMoniker Id="e229e2f0-3c7e-4c0f-9f91-cface003010b" LastKnownName="Object" />
+            <elementDefinition Id="4a3c9a5b-a3a3-4305-b4eb-222f7b75b022" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="abf68c57-1fab-4e1b-83b8-2ca1e33ed1e7" name="encipher" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c9d9c0cf-49f9-4b96-b768-cdd8a1955b9a" />
+          </operation>
+          <operation Id="9e486479-b2c7-4a39-a57f-edf21da43d9c" name="decipher" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c1b6a782-fa3b-4ec6-bab6-473b211ffdfa" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="f34e33f8-47ef-48e7-83d6-547360052826" name="InterfaceEpcos" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0f20a5c0-4fb3-4787-a077-b6a21d3a54a4" />
+        <ownedOperations>
+          <operation Id="63812604-6e61-4f8c-98f7-acc68688fd35" name="encryptRSA" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="af23ba04-0e96-4df9-8edd-ee3cb7c46ad8" />
+          </operation>
+          <operation Id="4d08c4c8-fee7-4d51-bb69-473908b7be57" name="decryptRSA" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4e879b0c-a441-4105-9c64-60c096418c8f" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1e6dcb3b-c104-46aa-8b7c-cee2ca27a292" name="Nortel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a446ed4e-a338-45d7-a694-06db4bdc9389" />
+        <suppliersInternal>
+          <dependency Id="dc8cebdc-ca3f-4627-8e94-a754af43f8df">
+            <interfaceMoniker Id="7d694c51-82ef-42bc-8dd9-d4067ec642d6" LastKnownName="InterfaceNortel" />
+            <elementDefinition Id="769b9495-b18b-48a6-8dd8-144281527117" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="7d694c51-82ef-42bc-8dd9-d4067ec642d6" name="InterfaceNortel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="08e04dfc-0c94-4292-8792-cba72bd38450" />
+        <suppliersInternal>
+          <dependency Id="b0aa2075-ca7a-4bdb-aee1-e84e5db18ab8">
+            <enumerationMoniker Id="8b5165ed-4083-47b8-942c-5f0d825470fd" LastKnownName="TEncoding" />
+            <elementDefinition Id="d984dd9b-7dc8-4b88-92b1-03ff069d540a" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperations>
+          <operation Id="6f95bf9e-a797-4425-abd3-2a627c228478" name="encipher" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dc72c2b0-e6e0-4815-a890-6f7e0a39c2eb" />
+          </operation>
+          <operation Id="35333aeb-d68c-40d7-b32d-a252a9532896" name="decipher" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="64ffd3da-2d74-403f-9f0e-29a50283304e" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b53bc7a0-306f-435e-9adf-103664a30eea" name="Epcos" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c788c361-e59b-45fa-a58a-cb75d8e1c25e" />
+        <suppliersInternal>
+          <dependency Id="8ee181ea-cddb-4871-b739-a03cd881675c">
+            <interfaceMoniker Id="f34e33f8-47ef-48e7-83d6-547360052826" LastKnownName="InterfaceEpcos" />
+            <elementDefinition Id="095acd76-e9fb-4b39-af26-60a947593f33" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="8b5165ed-4083-47b8-942c-5f0d825470fd" name="TEncoding" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae337c77-374f-4642-ab44-a829fabb71d3" />
+        <ownedLiterals>
+          <enumerationLiteral Id="920d1312-1f9f-485d-8fd6-d82bd5ec3c71" name="eRSA">
+            <elementDefinition Id="d8415e04-85e8-46d0-9400-4484b6fc3fea" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="a5e4f3e6-144a-426f-bd9c-e6f717ba08ca" name="Caesar">
+            <elementDefinition Id="cd272476-cc65-4434-b7a2-788613026d22" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" name="std::string" isAbstract="false" isLeaf="false" cachedFullName="std::string">
+        <elementDefinition Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="71692f6a-5564-442d-a46e-d7b818cba81b" name="encryption_cd">
+    <elementDefinition Id="a64659e4-9604-4762-80fb-1d1ff09ded70" />
+  </package>
+</logicalClassDesignerModel>
