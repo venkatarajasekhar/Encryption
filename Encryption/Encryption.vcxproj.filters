@@ -21,21 +21,21 @@
     <ClInclude Include="EpcosAdapter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NortelAdapter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="InterfaceEpcos.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InterfaceNortel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NortelAdapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="EpcosAdapter.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="EpcosAdapter.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
