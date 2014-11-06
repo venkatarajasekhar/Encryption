@@ -76,15 +76,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Caesar.h" />
+    <ClInclude Include="Encrypt.h" />
     <ClInclude Include="EpcosAdapter.h" />
     <ClInclude Include="InterfaceEpcos.h" />
     <ClInclude Include="InterfaceNortel.h" />
     <ClInclude Include="NortelAdapter.h" />
     <ClInclude Include="Object.h" />
+    <ClInclude Include="RSA.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Caesar.cpp" />
+    <ClCompile Include="Encrypt.cpp" />
     <ClCompile Include="EpcosAdapter.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RSA.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
