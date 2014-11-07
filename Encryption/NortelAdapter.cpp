@@ -1,6 +1,11 @@
+// autors:   	David Kahlbacher
+// module:   	NortelAdapter.cpp
+// function: 	implementation of NortelAdapter methods
+// version:  	1.1
+// date of creation:	07.11.2014
+// date of last change:	07.11.2014
+
 #include "NortelAdapter.h"
-#include "Caesar.h"
-#include "RSA.h"
 
 /*
 	Method
@@ -16,9 +21,11 @@ void NortelAdapter::decipher(TEncoding const &_codeType, std::string const &_fil
 	}
 	Encrypt *pEnc = nullptr;
 	std::string tmpend = getEnd(pEnc,_codeType);
+	std::string outfilename = modify(_fileName, "deciphered"+tmpend);
+
 	pEnc->readFile(_fileName + tmpend);
 	pEnc->decrypt();
-	pEnc->writeFile(_fileName);
+	pEnc->writeFile(outfilename);
 	delete pEnc; pEnc = nullptr;
 }
 
@@ -68,4 +75,21 @@ std::string NortelAdapter::getEnd(Encrypt* &_pEnc, TEncoding const &_codeType) c
 		throw std::string("Error: unknown error in selecting deciphercode!");
 	}
 	return tmpend;
+}
+
+/*
+	private Method
+	name: modify
+	function: modifys the _fileName with _insertText at the end of file (before file ending)
+	parameters: _fileName: it is the fileName that should be extended
+				_insertText: the text which should be written to _fileName
+	return: std::string: modified outputfile name
+*/
+std::string NortelAdapter::modify(std::string const &_fileName, std::string const &_insertText) const{
+	int i = _fileName.size();
+	std::string outfilename = _fileName;
+	while ((--i >= 0) && (_fileName[i] != '.'));
+	if (i < 0) outfilename += _insertText;
+	else outfilename.insert(i, _insertText);
+	return outfilename;
 }

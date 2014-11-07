@@ -60,4 +60,32 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Files\test1.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\Files\test1deciphered.Caesar.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\Files\test1deciphered.RSA.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\Files\test1decrypted.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\Files\test2.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\Files\test3.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Files\test1.txt.Caesar">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Files\test1.txt.RSA">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

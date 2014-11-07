@@ -3,7 +3,7 @@
 // function: 	abstract interface for client Nortel
 // version:  	1.0
 // date of creation:	04.11.2014
-// date of last change:	04.11.2014
+// date of last change:	07.11.2014
 
 #ifndef INTERFACENORTEL_H
 #define INTERFACENORTEL_H

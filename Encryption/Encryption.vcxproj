@@ -93,6 +93,18 @@
     <ClCompile Include="NortelAdapter.cpp" />
     <ClCompile Include="RSA.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Files\test1.txt" />
+    <Text Include="..\Files\test1deciphered.Caesar.txt" />
+    <Text Include="..\Files\test1deciphered.RSA.txt" />
+    <Text Include="..\Files\test1decrypted.txt" />
+    <Text Include="..\Files\test2.txt" />
+    <Text Include="..\Files\test3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Files\test1.txt.Caesar" />
+    <None Include="..\Files\test1.txt.RSA" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
