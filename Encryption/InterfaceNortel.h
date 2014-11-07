@@ -10,16 +10,51 @@
 
 #include <string>
 
+/*
+	Enum
+	name: TEncoding
+*/
 enum TEncoding{
 	eCaesar,
 	eRSA
 };
 
+/*
+	Interface Class
+	name: InterfaceNortel
+	function:
+	inharitance: none
+*/
 class InterfaceNortel{
 public:
-	virtual ~InterfaceNortel() = default;
+	/*
+		Method
+		name: decipher
+		function: encrypt file with RSA or Caesar
+		parameters: _codeType: eRSA or eCaesar for decryption type
+					_fileName: for example: Name.txt
+		return: void
+	*/
 	virtual void decipher(TEncoding const &_codeType, std::string const &_fileName) const = 0;
+
+	/*
+		Method
+		name: encipher
+		function: encrypt file with RSA or Caesar
+		parameters: _codeType: eRSA or eCaesar for encryption type
+					_fileName: for example: Name.txt
+		return: void
+	*/
 	virtual void encipher(TEncoding const &_codeType, std::string const &_fileName) const = 0;
+
+	/*
+		Method
+		name: dtor
+		function: tells the dtor to be virtual
+		parameters: void
+		return: void
+	*/
+	virtual ~InterfaceNortel() = default;
 };
 
 #endif

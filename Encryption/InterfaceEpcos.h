@@ -10,11 +10,41 @@
 
 #include <string>
 
+/*
+	Interface Class
+	name: InterfaceEpcos
+	function:
+	inharitance: none
+*/
 class InterfaceEpcos{
 public:
-	virtual ~InterfaceEpcos() = default;
+	
+	/*
+		Method
+		name: decryptRSA
+		function: decrypt file with RSA
+		parameters: _fileName: for example: Name.txt
+		return: void
+	*/
 	virtual void decryptRSA(std::string const &_fileName) const = 0;
+
+	/*
+		Method
+		name: encryptRSA
+		function: encrypt file with RSA
+		parameters: _fileName: for example: Name.txt
+		return: void
+	*/
 	virtual void encryptRSA(std::string const &_fileName) const = 0;
+
+	/*
+		Method
+		name: dtor
+		function: tells the dtor to be virtual
+		parameters: void
+		return: void
+	*/
+	virtual ~InterfaceEpcos() = default;
 };
 
 #endif
