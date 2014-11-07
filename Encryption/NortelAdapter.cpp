@@ -21,9 +21,9 @@ void NortelAdapter::decipher(TEncoding const &_codeType, std::string const &_fil
 	}
 	Encrypt *pEnc = nullptr;
 	std::string tmpend = getEnd(pEnc,_codeType);
-	std::string outfilename = modify(_fileName, "deciphered"+tmpend);
+	std::string outfilename = modify(_fileName, "deciphered" + tmpend);
 
-	pEnc->readFile(_fileName + tmpend);
+	pEnc->readFile(_fileName + '.' + tmpend);
 	pEnc->decrypt();
 	pEnc->writeFile(outfilename);
 	delete pEnc; pEnc = nullptr;
@@ -45,7 +45,7 @@ void NortelAdapter::encipher(TEncoding const &_codeType, std::string const &_fil
 	std::string tmpend = getEnd(pEnc,_codeType);
 	pEnc->readFile(_fileName);
 	pEnc->encrypt();
-	pEnc->writeFile(_fileName + tmpend);
+	pEnc->writeFile(_fileName + '.' + tmpend);
 	delete pEnc; pEnc = nullptr;
 }
 
@@ -63,12 +63,12 @@ std::string NortelAdapter::getEnd(Encrypt* &_pEnc, TEncoding const &_codeType) c
 	// selecting RSA
 	case eRSA:
 		_pEnc = new(RSA);
-		tmpend = ".RSA";
+		tmpend = "RSA";
 		break;
 	// selecting Caesar
 	case eCaesar:
 		_pEnc = new(Caesar);
-		tmpend = ".Caesar";
+		tmpend = "Caesar";
 		break;
 	// unknown value for _codeType
 	default:

@@ -64,12 +64,6 @@
     <Text Include="..\Files\test1.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="..\Files\test1deciphered.Caesar.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="..\Files\test1deciphered.RSA.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
     <Text Include="..\Files\test1decrypted.txt">
       <Filter>Resource Files</Filter>
     </Text>
@@ -77,6 +71,12 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="..\Files\test3.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\Files\test1decipheredCaesar.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\Files\test1decipheredRSA.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
