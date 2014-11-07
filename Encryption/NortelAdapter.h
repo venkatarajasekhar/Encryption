@@ -13,8 +13,10 @@
 
 class NortelAdapter : public Object, public InterfaceNortel{
 public:
-	void decipher(std::string const &_fileName, TEncoding const _codeType);
-	void encipher(std::string const &_fileName, TEncoding const _codeType);
+	void decipher(TEncoding const &_codeType, std::string const &_fileName) const;
+	void encipher(TEncoding const &_codeType, std::string const &_fileName) const;
+private:
+	std::string getEnd(Encrypt* &pEnc, TEncoding const &_codeType) const;
 };
 
 #endif

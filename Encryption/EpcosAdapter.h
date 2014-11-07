@@ -16,8 +16,8 @@
 */
 class EpcosAdapter :public Object, public InterfaceEpcos{
 public:
-	void decryptRSA(std::string _fileName);
-	void encryptRSA(std::string _fileName);
+	void decryptRSA(std::string const &_fileName) const;
+	void encryptRSA(std::string const &_fileName) const;
 };
 
 #endif

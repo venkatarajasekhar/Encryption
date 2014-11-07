@@ -13,8 +13,8 @@
 class InterfaceEpcos{
 public:
 	virtual ~InterfaceEpcos() = default;
-	virtual void decryptRSA(std::string _fileName) = 0;
-	virtual void encryptRSA(std::string _fileName) = 0;
+	virtual void decryptRSA(std::string const &_fileName) const = 0;
+	virtual void encryptRSA(std::string const &_fileName) const = 0;
 };
 
 #endif

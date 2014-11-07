@@ -56,5 +56,8 @@
     <ClCompile Include="Caesar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NortelAdapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

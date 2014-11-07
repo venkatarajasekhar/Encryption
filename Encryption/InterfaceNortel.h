@@ -11,15 +11,15 @@
 #include <string>
 
 enum TEncoding{
-	Caesar,
+	eCaesar,
 	eRSA
 };
 
 class InterfaceNortel{
 public:
 	virtual ~InterfaceNortel() = default;
-	virtual void decipher(std::string _fileName) = 0;
-	virtual void encipher(std::string _fileName) = 0;
+	virtual void decipher(TEncoding const &_codeType, std::string const &_fileName) const = 0;
+	virtual void encipher(TEncoding const &_codeType, std::string const &_fileName) const = 0;
 };
 
 #endif
