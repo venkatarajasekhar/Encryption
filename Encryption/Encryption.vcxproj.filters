@@ -79,12 +79,42 @@
     <Text Include="..\Files\test1decipheredRSA.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="..\Files\test2decipheredCaesar.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\Files\test2decipheredRSA.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\Files\test2decrypted.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\Files\test3decipheredCaesar.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\Files\test3decipheredRSA.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\Files\test3decrypted.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Files\test1.txt.Caesar">
       <Filter>Resource Files</Filter>
     </None>
     <None Include="..\Files\test1.txt.RSA">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Files\test2.txt.Caesar">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Files\test2.txt.RSA">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Files\test3.txt.Caesar">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Files\test3.txt.RSA">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

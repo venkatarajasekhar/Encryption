@@ -99,11 +99,21 @@
     <Text Include="..\Files\test1decipheredRSA.txt" />
     <Text Include="..\Files\test1decrypted.txt" />
     <Text Include="..\Files\test2.txt" />
+    <Text Include="..\Files\test2decipheredCaesar.txt" />
+    <Text Include="..\Files\test2decipheredRSA.txt" />
+    <Text Include="..\Files\test2decrypted.txt" />
     <Text Include="..\Files\test3.txt" />
+    <Text Include="..\Files\test3decipheredCaesar.txt" />
+    <Text Include="..\Files\test3decipheredRSA.txt" />
+    <Text Include="..\Files\test3decrypted.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Files\test1.txt.Caesar" />
     <None Include="..\Files\test1.txt.RSA" />
+    <None Include="..\Files\test2.txt.Caesar" />
+    <None Include="..\Files\test2.txt.RSA" />
+    <None Include="..\Files\test3.txt.Caesar" />
+    <None Include="..\Files\test3.txt.RSA" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

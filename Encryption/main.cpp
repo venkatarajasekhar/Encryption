@@ -30,8 +30,28 @@ int main(void) {
 	c.decrypt();
 	c.writeFile("./test3.txt");*/
 	
-	std::string filedest = "../Files/";
-	std::cout << testblock(filedest+"test1.txt") << std::endl;
+	// filedestination
+	std::string const filedest = "../Files/";
+
+	// Testcase 1: normal file
+	std::cout << "Test1 normal file: ";
+	std::cout << (testblock(filedest + "test1.txt") ? "Failure" : "Success") << std::endl << std::endl;
+
+	// Testcase 2: non existing file
+	std::cout << "Test2 non existing file: ";
+	std::cout << (testblock(filedest + "t.txt") ? "Failure" : "Success") << std::endl << std::endl;
+
+	// Testcase 3: empty filename
+	std::cout << "Test3 empty filename: ";
+	std::cout << (testblock("") ? "Failure" : "Success") << std::endl << std::endl;
+
+	// Testcase 4: empty file
+	std::cout << "Test4 empty file: ";
+	std::cout << (testblock(filedest + "test2.txt") ? "Failure" : "Success") << std::endl << std::endl;
+
+	// Testcase 5: another normal file
+	std::cout << "Test5 empty file: ";
+	std::cout << (testblock(filedest + "test3.txt") ? "Failure" : "Success") << std::endl << std::endl;
 
 	return EXIT_SUCCESS;
 }
