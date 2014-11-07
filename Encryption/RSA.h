@@ -8,7 +8,12 @@
 #ifndef RSA_H
 #define RSA_H
 
+#include <cmath>
 #include "Encrypt.h"
+
+const unsigned int RSA_N = 187;
+const unsigned int RSA_E = 7;
+const unsigned int RSA_D = 23;
 
 /*
 	Class
@@ -25,7 +30,7 @@ public:
 		parameters: void
 		return: void
 	*/
-	void decrypt() override;
+	void decrypt();
 
 	/*
 		Method
@@ -34,7 +39,7 @@ public:
 		parameters: void
 		return: void
 	*/
-	void encrypt() override;
+	void encrypt();
 };
 
 

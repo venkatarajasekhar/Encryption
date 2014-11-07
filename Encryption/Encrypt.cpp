@@ -15,7 +15,24 @@
 	return: void
 */
 void Encrypt::readFile(std::string _fileName) {
+	// open file
+	std::ifstream file(_fileName);
 
+	// check if file is open
+	if (!file.is_open()) {
+		throw std::string("error in open file - Encrypt::readFile");
+	}
+
+	// read data out of file
+	while (!file.eof()) {
+		char tmp = file.get();
+		mRawData.push_back(tmp);
+	}
+	// remove termination byte. it would add up on every read operation
+	mRawData.resize(mRawData.size() - 1);
+
+	// close file
+	file.close();
 }
 
 /*
@@ -25,6 +42,22 @@ void Encrypt::readFile(std::string _fileName) {
 	parameters: _fileName - name of the file to write to
 	return: void
 */
-void Encrypt::readFile(std::string _fileName) {
+void Encrypt::writeFile(std::string _fileName) {
+	// open file
+	std::ofstream file(_fileName);
 
+	// check if file is open
+	if (!file.is_open()) {
+		throw std::string("error in open file - Encrypt::readFile");
+	}
+
+	// write processed data into file
+	file << mProcessedData;
+
+	// close file
+	file.close();
+
+	// clear tmp data
+	mProcessedData.clear();
+	mRawData.clear();
 }

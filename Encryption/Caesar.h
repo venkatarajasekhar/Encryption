@@ -5,10 +5,15 @@
 // date of creation:	06.11.2014
 // date of last change:	06.11.2014
 
-#ifndef RSA_H
-#define RSA_H
+#ifndef CAESAR_H
+#define CAESAR_H
 
+#include <string>
+#include <iostream>
 #include "Encrypt.h"
+
+const unsigned int KEY = 13;
+const unsigned int FIELD_SIZE = 255;
 
 /*
 	Class
@@ -25,7 +30,7 @@ public:
 		parameters: void
 		return: void
 	*/
-	void decrypt() override;
+	void decrypt();
 
 	/*
 		Method
@@ -34,7 +39,7 @@ public:
 		parameters: void
 		return: void
 	*/
-	void encrypt() override;
+	void encrypt();
 };
 
 

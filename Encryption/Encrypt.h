@@ -9,6 +9,8 @@
 #define ENCRYPT_H
 
 #include <string>
+#include <fstream>
+#include <iostream>
 #include "Object.h"
 
 /*
@@ -53,9 +55,14 @@ public:
 		parameters: _fileName - name of the file to write to
 		return: void
 	*/
-	void readFile(std::string _fileName);
-};
+	void writeFile(std::string _fileName);
 
+protected:
+	// save data
+	std::string mRawData;
+
+	std::string mProcessedData;
+};
 
 
 #endif

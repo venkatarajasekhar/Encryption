@@ -5,7 +5,7 @@
 // date of creation:	06.11.2014
 // date of last change:	06.11.2014
 
-#include "RSA.h"
+#include "Caesar.h"
 
 /*
 	Method
@@ -14,8 +14,12 @@
 	parameters: void
 	return: void
 */
-void RSA::decrypt() {
-
+void Caesar::decrypt() {
+	// decrypt char for char and save it inta a tmp variable
+	for (char c : mRawData) {
+		char tmp = (c - KEY) % FIELD_SIZE;
+		mProcessedData.push_back(tmp);
+	}
 }
 
 /*
@@ -25,6 +29,10 @@ void RSA::decrypt() {
 	parameters: void
 	return: void
 */
-void RSA::encrypt() {
-
+void Caesar::encrypt() {
+	// encrypt char for char and save it into a tmp variable
+	for (char c : mRawData) {
+		char tmp = (c + KEY) % FIELD_SIZE;
+		mProcessedData.push_back(tmp);
+	}
 }
