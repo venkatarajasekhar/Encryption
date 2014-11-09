@@ -14,22 +14,6 @@
 int testblock(std::string const &_fileName);
 
 int main(void) {
-	/*Caesar c;
-
-	c.readFile("./test.txt");
-	c.encrypt();
-	c.writeFile("./test.txt.Caesar");
-	c.readFile("./test.txt.Caesar");
-	c.decrypt();
-	c.writeFile("./test1.txt");
-	
-	c.readFile("./test2.txt");
-	c.encrypt();
-	c.writeFile("./test.txt.RSA");
-	c.readFile("./test.txt.RSA");
-	c.decrypt();
-	c.writeFile("./test3.txt");*/
-	
 	// filedestination
 	std::string const filedest = "../Files/";
 
@@ -50,7 +34,7 @@ int main(void) {
 	std::cout << (testblock(filedest + "test2.txt") ? "Failure" : "Success") << std::endl << std::endl;
 
 	// Testcase 5: another normal file
-	std::cout << "Test5 empty file: ";
+	std::cout << "Test5 normal file: ";
 	std::cout << (testblock(filedest + "test3.txt") ? "Failure" : "Success") << std::endl << std::endl;
 
 	return EXIT_SUCCESS;
