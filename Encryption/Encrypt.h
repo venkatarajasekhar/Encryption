@@ -8,6 +8,7 @@
 #ifndef ENCRYPT_H
 #define ENCRYPT_H
 
+#include <vector>
 #include <string>
 #include <fstream>
 #include <iostream>
@@ -59,9 +60,9 @@ public:
 
 protected:
 	// save data
-	std::string mRawData;
+	std::vector<unsigned char> mRawData;
 
-	std::string mProcessedData;
+	std::vector<unsigned char> mProcessedData;
 };
 
 

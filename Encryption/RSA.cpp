@@ -16,7 +16,7 @@
 */
 void RSA::decrypt() {
 	// decrypt data
-	for (char c : mRawData) {
+	for (unsigned char c : mRawData) {
 		//unsigned int tmp = std::pow(c, RSA_D);
 		//tmp = tmp % RSA_N;
 
@@ -25,7 +25,9 @@ void RSA::decrypt() {
 			tmp *= c;
 			tmp %= RSA_N;
 		}
-		mProcessedData.push_back(tmp);
+
+		// cast tmp to char... can't be bigger then 187 so it fitts into char
+		mProcessedData.push_back((unsigned char)tmp);
 	}
 
 }
@@ -39,7 +41,7 @@ void RSA::decrypt() {
 */
 void RSA::encrypt() {
 	// encrypt data
-	for (char c : mRawData) {
+	for (unsigned char c : mRawData) {
 		//unsigned int tmp = std::pow(c, RSA_E);
 		//tmp = tmp % RSA_N;
 
@@ -49,7 +51,8 @@ void RSA::encrypt() {
 			tmp %= RSA_N;
 		}
 
-		mProcessedData.push_back(tmp);
+		// cast tmp to char... can't be bigger then 187 so it fitts into char
+		mProcessedData.push_back((unsigned char)tmp);
 	}
 
 }

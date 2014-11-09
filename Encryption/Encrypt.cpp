@@ -16,7 +16,8 @@
 */
 void Encrypt::readFile(std::string _fileName) {
 	// open file
-	std::ifstream file(_fileName);
+	std::ifstream file;
+	file.open(_fileName, std::ios::binary);
 
 	// check if file is open
 	if (!file.is_open()) {
@@ -44,7 +45,8 @@ void Encrypt::readFile(std::string _fileName) {
 */
 void Encrypt::writeFile(std::string _fileName) {
 	// open file
-	std::ofstream file(_fileName);
+	std::ofstream file;
+	file.open(_fileName, std::ios::binary);
 
 	// check if file is open
 	if (!file.is_open()) {
@@ -52,7 +54,9 @@ void Encrypt::writeFile(std::string _fileName) {
 	}
 
 	// write processed data into file
-	file << mProcessedData;
+	for (char c : mProcessedData) {
+		file.put(c);
+	}
 
 	// close file
 	file.close();
