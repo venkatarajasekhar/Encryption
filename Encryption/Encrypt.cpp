@@ -27,9 +27,6 @@ void Encrypt::readFile(std::string _fileName) {
 	// read data out of file
 	while (!file.eof()) {
 		unsigned char tmp = file.get();
-		if (tmp > VALUE_BOUND) {
-			throw std::string("Value out of bounds, can't be en-/decrypted - Encrypt::readFile");
-		}
 		mRawData.push_back(tmp);
 	}
 	// remove termination byte. it would add up on every read operation
