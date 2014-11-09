@@ -13,7 +13,7 @@
 #include "Encrypt.h"
 
 const unsigned int KEY = 13;
-const unsigned int FIELD_SIZE = 255;
+const unsigned int FIELD_SIZE = 127;
 
 /*
 	Class

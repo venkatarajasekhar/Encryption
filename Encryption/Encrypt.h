@@ -14,6 +14,9 @@
 #include <iostream>
 #include "Object.h"
 
+
+const unsigned int VALUE_BOUND = 127;
+
 /*
 	Class
 	name: Encrypt
