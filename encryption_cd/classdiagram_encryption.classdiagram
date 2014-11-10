@@ -181,6 +181,20 @@
             <elementDefinition Id="67b0c405-aab4-4b1b-95e5-c2ab26c5cfbd" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="0cc21170-0e77-468c-8700-221ace162520" name="mRawData" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="898c2b75-c3b8-4d74-bfee-7e687cba8ec6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="db1febe5-be68-45cd-9589-c8b9f9eed8a8" LastKnownName="std::vector&lt;unsigned char&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="75ced326-8614-4ecf-b8cc-31328f8102ff" name="mProcessedData" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="64d15e2e-1d09-460e-863a-3cc7caad1824" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b80496d9-0c7a-43d9-92ba-0f46c29c71ec" LastKnownName="std::vector&lt;unsigned char&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="5e9228f9-55ae-4711-9c16-bb3e6bf15ce5" name="encrypt" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="ef6ef5e4-cf40-4579-bda6-c1c9b9bb9767" />
@@ -383,6 +397,16 @@
     <packageHasNamedElement>
       <referencedType Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" name="std::string" isAbstract="false" isLeaf="false" cachedFullName="std::string">
         <elementDefinition Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b80496d9-0c7a-43d9-92ba-0f46c29c71ec" name="std::vector&lt;unsigned char&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;unsigned char&gt;">
+        <elementDefinition Id="66fedf06-1eee-4e2a-a651-fcae2ca9210c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="db1febe5-be68-45cd-9589-c8b9f9eed8a8" name="std::vector&lt;unsigned char&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;unsigned char&gt;">
+        <elementDefinition Id="66fedf06-1eee-4e2a-a651-fcae2ca9210c" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

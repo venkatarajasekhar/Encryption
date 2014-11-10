@@ -310,6 +310,46 @@
               LastKnownLocation="encryption_cd.uml" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="898c2b75-c3b8-4d74-bfee-7e687cba8ec6"
+            name="mRawData"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="66fedf06-1eee-4e2a-a651-fcae2ca9210c"
+                LastKnownName="std::vector&lt;unsigned char&gt;"
+                LastKnownLocation="encryption_cd.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="64d15e2e-1d09-460e-863a-3cc7caad1824"
+            name="mProcessedData"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="66fedf06-1eee-4e2a-a651-fcae2ca9210c"
+                LastKnownName="std::vector&lt;unsigned char&gt;"
+                LastKnownLocation="encryption_cd.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="ef6ef5e4-cf40-4579-bda6-c1c9b9bb9767"
@@ -677,6 +717,16 @@
       <undefinedType
         Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
         name="std::string" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="63ed3bc7-75cb-47e1-b5cb-988d689c731e"
+        name="vector&lt;unsigned char&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="66fedf06-1eee-4e2a-a651-fcae2ca9210c"
+        name="std::vector&lt;unsigned char&gt;" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
