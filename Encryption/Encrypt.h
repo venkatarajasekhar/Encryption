@@ -47,7 +47,7 @@ public:
 		parameters: _fileName - name of the file to read from
 		return: void
 	*/
-	void readFile(std::string _fileName);
+	void readFile(std::string const & _fileName);
 
 	/*
 		Method
@@ -56,12 +56,12 @@ public:
 		parameters: _fileName - name of the file to write to
 		return: void
 	*/
-	void writeFile(std::string _fileName);
+	void writeFile(std::string const & _fileName);
 
 protected:
-	// save data
+	// save data unprcessed out of file
 	std::vector<unsigned char> mRawData;
-
+	// processed data en-/decrypted; read for fileWrite
 	std::vector<unsigned char> mProcessedData;
 };
 

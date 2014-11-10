@@ -14,7 +14,7 @@
 	parameters: _fileName - name of the file to read from
 	return: void
 */
-void Encrypt::readFile(std::string _fileName) {
+void Encrypt::readFile(std::string const & _fileName) {
 	// open file
 	std::ifstream file;
 	file.open(_fileName, std::ios::binary);
@@ -43,7 +43,7 @@ void Encrypt::readFile(std::string _fileName) {
 	parameters: _fileName - name of the file to write to
 	return: void
 */
-void Encrypt::writeFile(std::string _fileName) {
+void Encrypt::writeFile(std::string const & _fileName) {
 	// open file
 	std::ofstream file;
 	file.open(_fileName, std::ios::binary);
