@@ -18,7 +18,7 @@ void RSA::decrypt() {
 	// decrypt data
 	for (unsigned char c : mRawData) {
 		// throw exception for value out of bounds
-		if (c > RSA_N) {
+		if (c >= RSA_N) {
 			throw std::string("Value out of bounds, can't be decrypted - RSA::decrypt()");
 		}
 
@@ -46,7 +46,7 @@ void RSA::encrypt() {
 	// encrypt data
 	for (unsigned char c : mRawData) {
 		// throw exception for value out of bounds
-		if (c > RSA_N) {
+		if (c >= RSA_N) {
 			throw std::string("Value out of bounds, can't be encrypted - RSA::encrypt()");
 		}
 
