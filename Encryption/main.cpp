@@ -33,7 +33,7 @@ int main(void) {
 	std::cout << "Test4 empty file: ";
 	std::cout << (testblock(filedest + "test2.txt") ? "Failure" : "Success") << std::endl << std::endl;
 
-	// Testcase 5: another normal file
+	// Testcase 5: another normal file with infalid symbols (הצü)
 	std::cout << "Test5 normal file with invalid symbols: ";
 	std::cout << (testblock(filedest + "test3.txt") ? "Failure" : "Success") << std::endl << std::endl;
 
