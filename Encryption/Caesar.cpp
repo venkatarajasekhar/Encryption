@@ -16,11 +16,11 @@
 */
 void Caesar::decrypt() {
 	// decrypt char for char and save it into a tmp variable
-	for (char c : mRawData) {
+	for (unsigned char c : mRawData) {
 		// throw exception for value out of bounds
-		/*if (c >= FIELD_SIZE) {
+		if (c >= FIELD_SIZE) {
 			throw std::string("Value out of bounds, can't be decrypted - Caesar::decrypt()");
-		}*/
+		}
 		// decrypt
 		char tmp = (c - KEY) % FIELD_SIZE;
 		mProcessedData.push_back(tmp);
@@ -36,7 +36,7 @@ void Caesar::decrypt() {
 */
 void Caesar::encrypt() {
 	// encrypt char for char and save it into a tmp variable
-	for (char c : mRawData) {
+	for (unsigned char c : mRawData) {
 		// throw exception for value out of bounds
 		if (c >= FIELD_SIZE) {
 			throw std::string("Value out of bounds, can't be encrypted - Caesar::encrypt()");
