@@ -123,7 +123,7 @@
             </appliedStereotypesInternal>
             <elementDefinition Id="9ecaf5d7-32ff-45ed-b611-1ec901e984c2" />
           </operation>
-          <operation Id="6339c954-c29e-4ed3-8e83-89ed3698a5ac" name="~Obhect" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+          <operation Id="6339c954-c29e-4ed3-8e83-89ed3698a5ac" name="~Object" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="dffac650-d57f-4577-a63d-ffcb842ce26b" name="method" profile="CSharpProfile">
                 <elementDefinition Id="5bea4a8a-9802-49a1-a1b4-ddefeac2efe9" />
@@ -291,9 +291,58 @@
         <ownedOperationsInternal>
           <operation Id="e2959463-bf60-4894-b009-6301d76c28ea" name="encryptRSA" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="b9d76dbe-755b-4aa4-8778-1e65a1689970" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="adf611e5-a289-4057-8e9d-f103644cbfa9" name="_fileName" direction="In" isUnique="false">
+                  <elementDefinition Id="6bcc0f12-c1ad-4b7c-b381-2ff825d75fb6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
           <operation Id="f4abe258-ece1-4d09-be34-fb54e951af45" name="decryptRSA" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="45e4ac91-cc6a-4db1-b4fb-d561a5724dda" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f877b2bb-a594-4cf2-a762-7caaee0a0412" name="_fileName" direction="In" isUnique="false">
+                  <elementDefinition Id="5b81c550-dd84-489f-8e18-f2ec0393f937" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="eb8f0882-4a01-4c99-85a2-6fd0b4410e7c" name="modify" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="79f60a24-7099-4052-a078-54404c44a58c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="118a1726-2733-4283-bb40-4695a7e3f2da" name="_fileName" direction="In" isUnique="false">
+                  <elementDefinition Id="e00edb39-13cc-475e-a1b5-85186502dbad" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a1daf178-1f86-4ab1-88f7-befefe09085c" name="_insertText" direction="In" isUnique="false">
+                  <elementDefinition Id="6318ab0e-1efd-440d-a918-ae0daa9319e1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="be609f31-6a94-4a27-bbef-8cf3fcf11e9a" direction="Return" isUnique="false">
+                  <elementDefinition Id="de36c992-539a-49df-af0e-f0233779d20e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -320,9 +369,103 @@
         <ownedOperationsInternal>
           <operation Id="abf68c57-1fab-4e1b-83b8-2ca1e33ed1e7" name="encipher" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="c9d9c0cf-49f9-4b96-b768-cdd8a1955b9a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="75bade99-1c06-448e-b075-429d81da4c31" name="_fileName" direction="In" isUnique="false">
+                  <elementDefinition Id="e7837cf3-e9b8-4a9f-915c-7caf73cf1ad5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9f2df25f-6212-4db8-8601-47602f19d5a1" name="_codeType" direction="In" isUnique="false">
+                  <elementDefinition Id="57561d1c-2360-4bf1-9650-9e371d71bc0c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7d066ec8-1385-4315-8668-7d6408678099" LastKnownName="TEncoding" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
-          <operation Id="9e486479-b2c7-4a39-a57f-edf21da43d9c" name="decipher" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="c1b6a782-fa3b-4ec6-bab6-473b211ffdfa" />
+          <operation Id="6a43306f-974f-4446-8a16-a51f027ee374" name="decipher" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="54ebb076-ad3f-4e4d-908d-6eaf38f8e9c6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4c18a029-f370-44f7-8800-2ae0d37141f7" name="_fileName" direction="In" isUnique="false">
+                  <elementDefinition Id="1bc6becc-011c-4985-a2fd-6d977a450ef2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8e2481a9-78af-48fa-87d1-62b51a06eb84" name="_codeType" direction="In" isUnique="false">
+                  <elementDefinition Id="03db102c-2472-4083-9dda-d9082eaee792" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7d066ec8-1385-4315-8668-7d6408678099" LastKnownName="TEncoding" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="966bcaf9-4480-4f07-a7ca-f89f9ff3cbbc" name="modify" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="50324914-23e4-4e29-b24a-fef631b9c563" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6c8a5571-b585-45de-9d07-9cf94f20ea13" direction="Return" isUnique="false">
+                  <elementDefinition Id="e353eb63-4d6e-48e2-b4a7-f05cff3a8bb0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0bf7ba6d-42ac-44fb-ae18-c98e13e4fd8f" name="_fileName" direction="In" isUnique="false">
+                  <elementDefinition Id="11761d98-d617-4625-80ee-8cb2d2d27af1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c61c5aa2-ebf6-4ccf-b869-01ebdf307956" name="_insertText" direction="In" isUnique="false">
+                  <elementDefinition Id="8a1b1d44-49b2-47f8-abd5-99e09e778fdb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="114e3c39-2344-41c5-81a4-3df09c3ec100" name="getEnd" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c8832a33-064b-4732-b686-a202b8798d45" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="49ffa2be-68fb-4e45-b981-07f4ea3079ff" direction="Return" isUnique="false">
+                  <elementDefinition Id="0d8f070b-f70b-4b6b-bb7f-9e07290acd53" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e581ffc9-d914-4158-85ca-6621583f44d1" name="_pEnc" direction="In" isUnique="false">
+                  <elementDefinition Id="65bacfea-adf5-4ef3-ae02-e427ad9b4ba6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8c195f83-fa3d-4c1b-ad3f-f56f3e236f88" LastKnownName="Encryption*" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d83ab317-d3bf-4dad-81e3-24fab0f888d9" name="_codeType" direction="In" isUnique="false">
+                  <elementDefinition Id="2b5b5569-f672-4764-af29-75dfcdab3aa0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7d066ec8-1385-4315-8668-7d6408678099" LastKnownName="TEncoding" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -333,15 +476,35 @@
         <ownedOperations>
           <operation Id="63812604-6e61-4f8c-98f7-acc68688fd35" name="encryptRSA" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="af23ba04-0e96-4df9-8edd-ee3cb7c46ad8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="db1cf196-2cb0-48a9-add3-98d3af9ff00a" name="_fileName" direction="In" isUnique="false">
+                  <elementDefinition Id="f8faef70-8107-4cc7-a589-8ec2c1fb5c58" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
           <operation Id="4d08c4c8-fee7-4d51-bb69-473908b7be57" name="decryptRSA" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="4e879b0c-a441-4105-9c64-60c096418c8f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="411ba8e4-b692-4ecf-8113-1563eee98622" name="_fileName" direction="In" isUnique="false">
+                  <elementDefinition Id="e02b8c04-6482-4480-a37a-a5db1e7d96f8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperations>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="1e6dcb3b-c104-46aa-8b7c-cee2ca27a292" name="Nortel" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="1e6dcb3b-c104-46aa-8b7c-cee2ca27a292" name="Nortel(Testtreiber)" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="a446ed4e-a338-45d7-a694-06db4bdc9389" />
         <suppliersInternal>
           <dependency Id="dc8cebdc-ca3f-4627-8e94-a754af43f8df">
@@ -363,15 +526,51 @@
         <ownedOperations>
           <operation Id="6f95bf9e-a797-4425-abd3-2a627c228478" name="encipher" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="dc72c2b0-e6e0-4815-a890-6f7e0a39c2eb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f1ec02dc-62e8-4b66-8e6b-3b85c36811d2" name="_fileName" direction="In" isUnique="false">
+                  <elementDefinition Id="6b151312-4ea3-445d-85b3-c31af74c3c42" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1f1576ba-f1fd-442f-bee5-62295e486a6e" name="_codeType" direction="In" isUnique="false">
+                  <elementDefinition Id="c44e322a-cf5d-46a8-b51c-50f27211101d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7d066ec8-1385-4315-8668-7d6408678099" LastKnownName="TEncoding" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
           <operation Id="35333aeb-d68c-40d7-b32d-a252a9532896" name="decipher" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="64ffd3da-2d74-403f-9f0e-29a50283304e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="12813e3a-c120-4dc4-8563-c9be8aa4eb97" name="_fileName" direction="In" isUnique="false">
+                  <elementDefinition Id="6d6e8034-957f-43a3-902d-6db5b746bfd7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b3c490b-6182-48c3-afb0-ef6495d510dc" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b814610e-0364-45c6-9829-d3a14848cd24" name="_codeType" direction="In" isUnique="false">
+                  <elementDefinition Id="34d85640-58a3-41cc-bed1-ec714f300850" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7d066ec8-1385-4315-8668-7d6408678099" LastKnownName="TEncoding" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperations>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="b53bc7a0-306f-435e-9adf-103664a30eea" name="Epcos" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="b53bc7a0-306f-435e-9adf-103664a30eea" name="Epcos(Testtreiber)" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="c788c361-e59b-45fa-a58a-cb75d8e1c25e" />
         <suppliersInternal>
           <dependency Id="8ee181ea-cddb-4871-b739-a03cd881675c">
@@ -407,6 +606,16 @@
     <packageHasNamedElement>
       <referencedType Id="db1febe5-be68-45cd-9589-c8b9f9eed8a8" name="std::vector&lt;unsigned char&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;unsigned char&gt;">
         <elementDefinition Id="66fedf06-1eee-4e2a-a651-fcae2ca9210c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7d066ec8-1385-4315-8668-7d6408678099" name="TEncoding" isAbstract="false" isLeaf="false" cachedFullName="encryption_cd::TEncoding">
+        <elementDefinition Id="ae337c77-374f-4642-ab44-a829fabb71d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8c195f83-fa3d-4c1b-ad3f-f56f3e236f88" name="Encryption*" isAbstract="false" isLeaf="false" cachedFullName="Encryption*">
+        <elementDefinition Id="cf97b7b1-cd8e-4921-9953-bc9aee5c9ee9" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

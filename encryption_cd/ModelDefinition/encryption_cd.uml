@@ -182,7 +182,7 @@
           </operation>
           <operation
             Id="049e9318-20a4-4bac-bb33-350694360d85"
-            name="~Obhect"
+            name="~Object"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
@@ -535,7 +535,24 @@
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6bcc0f12-c1ad-4b7c-b381-2ff825d75fb6"
+                  name="_fileName"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
           <operation
             Id="45e4ac91-cc6a-4db1-b4fb-d561a5724dda"
             name="decryptRSA"
@@ -543,7 +560,77 @@
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5b81c550-dd84-489f-8e18-f2ec0393f937"
+                  name="_fileName"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="79f60a24-7099-4052-a078-54404c44a58c"
+            name="modify"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e00edb39-13cc-475e-a1b5-85186502dbad"
+                  name="_fileName"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6318ab0e-1efd-440d-a918-ae0daa9319e1"
+                  name="_insertText"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="de36c992-539a-49df-af0e-f0233779d20e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -588,15 +675,183 @@
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e7837cf3-e9b8-4a9f-915c-7caf73cf1ad5"
+                  name="_fileName"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="57561d1c-2360-4bf1-9650-9e371d71bc0c"
+                  name="_codeType"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="ae337c77-374f-4642-ab44-a829fabb71d3"
+                      LastKnownName="TEncoding"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
           <operation
-            Id="c1b6a782-fa3b-4ec6-bab6-473b211ffdfa"
+            Id="54ebb076-ad3f-4e4d-908d-6eaf38f8e9c6"
             name="decipher"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1bc6becc-011c-4985-a2fd-6d977a450ef2"
+                  name="_fileName"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="03db102c-2472-4083-9dda-d9082eaee792"
+                  name="_codeType"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="ae337c77-374f-4642-ab44-a829fabb71d3"
+                      LastKnownName="TEncoding"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="50324914-23e4-4e29-b24a-fef631b9c563"
+            name="modify"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e353eb63-4d6e-48e2-b4a7-f05cff3a8bb0"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="11761d98-d617-4625-80ee-8cb2d2d27af1"
+                  name="_fileName"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a1b1d44-49b2-47f8-abd5-99e09e778fdb"
+                  name="_insertText"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c8832a33-064b-4732-b686-a202b8798d45"
+            name="getEnd"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0d8f070b-f70b-4b6b-bb7f-9e07290acd53"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="65bacfea-adf5-4ef3-ae02-e427ad9b4ba6"
+                  name="_pEnc"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cf97b7b1-cd8e-4921-9953-bc9aee5c9ee9"
+                      LastKnownName="Encryption*"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2b5b5569-f672-4764-af29-75dfcdab3aa0"
+                  name="_codeType"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="ae337c77-374f-4642-ab44-a829fabb71d3"
+                      LastKnownName="TEncoding"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -614,7 +869,24 @@
             isStatic="false"
             isAbstract="true"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f8faef70-8107-4cc7-a589-8ec2c1fb5c58"
+                  name="_fileName"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
           <operation
             Id="4e879b0c-a441-4105-9c64-60c096418c8f"
             name="decryptRSA"
@@ -622,14 +894,31 @@
             isStatic="false"
             isAbstract="true"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e02b8c04-6482-4480-a37a-a5db1e7d96f8"
+                  name="_fileName"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperations>
       </Interface>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="a446ed4e-a338-45d7-a694-06db4bdc9389"
-        name="Nortel"
+        name="Nortel(Testtreiber)"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -667,7 +956,38 @@
             isStatic="false"
             isAbstract="true"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6b151312-4ea3-445d-85b3-c31af74c3c42"
+                  name="_fileName"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c44e322a-cf5d-46a8-b51c-50f27211101d"
+                  name="_codeType"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="ae337c77-374f-4642-ab44-a829fabb71d3"
+                      LastKnownName="TEncoding"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
           <operation
             Id="64ffd3da-2d74-403f-9f0e-29a50283304e"
             name="decipher"
@@ -675,14 +995,45 @@
             isStatic="false"
             isAbstract="true"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6d6e8034-957f-43a3-902d-6db5b746bfd7"
+                  name="_fileName"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7521d9d2-bc62-4a0c-82fe-c7664d2ec842"
+                      LastKnownName="std::string"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="34d85640-58a3-41cc-bed1-ec714f300850"
+                  name="_codeType"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="ae337c77-374f-4642-ab44-a829fabb71d3"
+                      LastKnownName="TEncoding"
+                      LastKnownLocation="encryption_cd.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperations>
       </Interface>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="c788c361-e59b-45fa-a58a-cb75d8e1c25e"
-        name="Epcos"
+        name="Epcos(Testtreiber)"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -727,6 +1078,11 @@
       <undefinedType
         Id="66fedf06-1eee-4e2a-a651-fcae2ca9210c"
         name="std::vector&lt;unsigned char&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="cf97b7b1-cd8e-4921-9953-bc9aee5c9ee9"
+        name="Encryption*" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
