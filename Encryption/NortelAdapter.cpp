@@ -6,6 +6,7 @@
 // date of last change:	07.11.2014
 
 #include "NortelAdapter.h"
+using namespace std;
 
 /*
 	Method
@@ -22,11 +23,18 @@ void NortelAdapter::decipher(TEncoding const &_codeType, std::string const &_fil
 	Encrypt *pEnc = nullptr;
 	std::string tmpend = getEnd(pEnc,_codeType);
 	std::string outfilename = modify(_fileName, "deciphered" + tmpend);
-
+        try{
+	pEnc = new Encrypt;
+	}catch (bad_alloc& ba)
+        {
+         std::cerr << "bad_alloc caught:"  <<endl;
+	}	
 	pEnc->readFile(_fileName + '.' + tmpend);
 	pEnc->decrypt();
 	pEnc->writeFile(outfilename);
-	delete pEnc; pEnc = nullptr;
+	delete pEnc; 
+	pEnc = nullptr;
+	return;
 }
 
 /*
@@ -43,10 +51,18 @@ void NortelAdapter::encipher(TEncoding const &_codeType, std::string const &_fil
 	}
 	Encrypt *pEnc = nullptr;
 	std::string tmpend = getEnd(pEnc,_codeType);
+	try{
+	pEnc = new Encrypt;
+	}catch (bad_alloc& ba)
+        {
+         std::cerr << "bad_alloc caught:"  <<endl;
+	}	
 	pEnc->readFile(_fileName);
 	pEnc->encrypt();
 	pEnc->writeFile(_fileName + '.' + tmpend);
-	delete pEnc; pEnc = nullptr;
+	delete pEnc; 
+	pEnc = nullptr;
+	return;
 }
 
 /*
